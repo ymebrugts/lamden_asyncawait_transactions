@@ -1,0 +1,7 @@
+{
+  "out": "./docs",
+  "name": "Lamden Async Await Transactions",
+  "theme": "markdown",
+  "readme": "none",
+  "tsconfig": "./tsconfig.bundle.json"
+}
