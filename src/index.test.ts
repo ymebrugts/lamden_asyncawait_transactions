@@ -1,4 +1,5 @@
 import { isNumberParseable } from './';
+import { LamdenAsyncAwaitTransactions } from './LamdenAsyncAwaitTransactions'
 
 describe('unit | isNumberParseable', () => {
   it('returns `true` for values parseable number', () => {
@@ -12,5 +13,15 @@ describe('unit | isNumberParseable', () => {
     expect(isNumberParseable({})).toBe(false);
     expect(isNumberParseable(NaN)).toBe(false);
     expect(isNumberParseable('18L')).toBe(false);
+  });
+});
+
+describe('LamdenAsync Await export', () => {
+  it('can call function', () => {
+    const consoleSpy = jest.spyOn(console, 'log');
+    var lib = new LamdenAsyncAwaitTransactions();
+    lib.helloWorld();
+
+    expect(consoleSpy).toHaveBeenCalledWith('Hello world');
   });
 });

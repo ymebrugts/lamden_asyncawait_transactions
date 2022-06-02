@@ -1,3 +1,4 @@
+export { LamdenAsyncAwaitTransactions } from "./LamdenAsyncAwaitTransactions";
 /**
  * A Branded Type for values parseable to number.
  */
