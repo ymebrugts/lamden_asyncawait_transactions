@@ -6,7 +6,7 @@
 <!-- [![Library minified size](https://badgen.net/bundlephobia/min/lamden_asyncawait_transactions)](https://bundlephobia.com/result?p=lamden_asyncawait_transactions) -->
 <!-- [![Library minified + gzipped size](https://badgen.net/bundlephobia/minzip/lamden_asyncawait_transactions)](https://bundlephobia.com/result?p=lamden_asyncawait_transactions) -->
 
-# WARNING! This LIBRARY IS NOT READY FOR USE YET
+# WARNING! This library is NOT ready for use yet
 
 ## Installation
 
