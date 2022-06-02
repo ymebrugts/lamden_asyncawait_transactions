@@ -1,30 +1,27 @@
 {
-  "name": "lamden_wallet_controller",
-  "version": "0.6.4",
-  "description": "An ES6 helper Class for handling the Lamden Wallet's broswer event interface.",
-  "main": "walletController.js",
+  "name": "lamden_asyncawait_transactions",
+  "version": "0.1.0",
+  "description": "A typescript based library to async await transactions",
+  "main": "LamdenAsyncAwait.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "doc": "doxdox 'walletController.js' --layout markdown --output README.md"
-  },
-  "keywords": [
-    "blockchain",
-    "lamden",
-    "wallet"
-  ],
-  "author": "Jeff Scott",
-  "license": "ISC",
-  "directories": {
-    "doc": "docs"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lamden/lamden_wallet_controller.git"
+    "url": "git+https://github.com/ymebrugts/lamden_asyncawait_transactions.git"
   },
+  "keywords": [
+    "blockchain",
+    "wallet",
+    "transactions",
+    "async",
+    "await",
+    "lamden"
+  ],
+  "author": "Yme Brugts",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Lamden/lamden_wallet_controller/issues"
+    "url": "https://github.com/ymebrugts/lamden_asyncawait_transactions/issues"
   },
-  "homepage": "https://github.com/Lamden/lamden_wallet_controller#readme",
-  "devDependencies": {},
-  "dependencies": {}
+  "homepage": "https://github.com/ymebrugts/lamden_asyncawait_transactions#readme"
 }
