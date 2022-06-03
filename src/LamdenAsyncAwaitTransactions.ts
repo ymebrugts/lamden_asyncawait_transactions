@@ -6,7 +6,7 @@ export class LamdenAsyncAwaitTransactions {
     
 
     listOfUidsWithPromisesToResolve: dictionary = {}
-    
+    listOfUidsWithCallbacks: dictionary = {}
 
 
     constructor() {
@@ -43,7 +43,7 @@ export class LamdenAsyncAwaitTransactions {
      * @param {Function=} callback A function that will called and passed the tx results.
      * @fires txStatus
      */
-    sendTransaction(tx, updateCallback = undefined, uniqueuid: string | undefined = undefined){
+    sendTransaction(tx: TransactionRequest, updateCallback = undefined, uniqueuid: string | undefined = undefined){
         if (uniqueuid === undefined) {
             // If the user set their own uid then we won't touch it. -> The UID should be unique or this library won't work.
             if (tx.uid === undefined) {
@@ -55,7 +55,7 @@ export class LamdenAsyncAwaitTransactions {
 
         this.listOfUidsWithPromisesToResolve[tx.uid] = new Promise<any>(() => {});
         
-        if (typeof updateCallback === 'function') this.callbacks[tx.uid] = updateCallback
+        if (typeof updateCallback === 'function') this.listOfUidsWithCallbacks[tx.uid] = updateCallback
         document.dispatchEvent(new CustomEvent('lamdenWalletSendTx', {detail: JSON.stringify(tx)}));
     }
 }
